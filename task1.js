@@ -1,22 +1,18 @@
-// Javascript implementation for dot product
  
 let n = 3;
    
-    // Function that return
-    // dot product of two vector array.
+  
     function dotProduct(vect_A, vect_B)
     {
    
         let product = 0;
    
-        // Loop for calculate dot product
         for (let i = 0; i < n; i++)
             product = product + vect_A[i] * vect_B[i];
         return product;
     }
    
-    // Function to find
-    // cross product of two vector array.
+    
     function crossProduct(vect_A, vect_B,
                              cross_P)
    
@@ -30,24 +26,18 @@ let n = 3;
                      - vect_A[1] * vect_B[0];
     }
      
-// Driver code
  
         let vect_A = [ 3, -5, 4 ];
         let vect_B = [ 2, 6, 5 ];
         let cross_P = [];
    
-        // dotProduct function call
         document.write("Dot product:");
         document.write(dotProduct(vect_A, vect_B) + "<br/>");
    
-        // crossProduct function call
         document.write("Cross product:");
         crossProduct(vect_A, vect_B, cross_P);
    
-        // Loop that print
-        // cross product of two vector array.
         for (let i = 0; i < n; i++)
    
             document.write(cross_P[i] + " ");
              
-       // This code is contributed by sanjoy_62.      
