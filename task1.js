@@ -1,5 +1,4 @@
 // Javascript implementation for dot product
-// and cross product of two vector.
  
 let n = 3;
    
